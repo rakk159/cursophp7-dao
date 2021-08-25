@@ -8,10 +8,25 @@ $usuarios = $sql->select("SELECT * FROM tb_usuarios");
 
 echo json_encode($usuarios);*/
 
-$root = new Usuario();
-
+//carrega um usuario
+/*$root = new Usuario();
 $root->loadById(3);
 
-echo $root;
+echo $root;*/
+
+//carrega lista de usuarios
+/*$list = Usuario::getList();
+echo json_encode($list);*/
+
+//Carrega lista de usuarios buscando por login
+/*$search = Usuario::search("jo");
+
+echo json_encode($search);*/
+
+//carrega um usuario usando o login e a senha
+$usuario = new Usuario();
+$usuario->login("user", "12345");
+
+echo $usuario;
 
  ?>
