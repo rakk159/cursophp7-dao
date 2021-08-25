@@ -34,12 +34,16 @@ echo $usuario;*/
 $aluno->insert();
 
 echo $aluno;*/
-
-$usuario = new Usuario();
+//alterar usuario
+/*$usuario = new Usuario();
 $usuario->loadByID(9);
 $usuario->update("professor", "wasd");
 
+echo $usuario;*/
+
+$usuario = new Usuario();
+$usuario->loadByID(10);
+$usuario->delete();
+
 echo $usuario;
-
-
  ?>
